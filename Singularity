@@ -98,5 +98,15 @@ Include: yum
     rm boost_1_69_0.tar.gz
     rm -rf boost_1_69_0
 
+    #install katydid
+    cd /opt/sw/
+    git clone https://github.com/project8/Katydid
+    cd Katydid
+    git submodule update --init --recursive
+    mkdir build && cd build
+    cmake3 .. 
+    make
+    make install
+
 
 
