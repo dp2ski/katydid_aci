@@ -100,7 +100,14 @@ Include: yum
 
     #need matio for katydid
     yum install -y zlib
-    yum install -y matio
+    git clone https://github.com/tbeu/matio
+    cd matio/
+    git submodule update --recursive
+    ./autogen.sh
+    ./configure
+    make
+    make check
+    make install
 
     #install katydid
     cd /opt/sw/
