@@ -98,6 +98,10 @@ Include: yum
     rm boost_1_69_0.tar.gz
     rm -rf boost_1_69_0
 
+    #need matio for katydid
+    yum install -y zlib
+    yum install -y matio
+
     #install katydid
     cd /opt/sw/
     git clone https://github.com/project8/Katydid
