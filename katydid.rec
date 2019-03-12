@@ -78,17 +78,17 @@ Include: yum
 #    echo "source /opt/sw/root/bin/thisroot.sh" >> ~/.bashrc
 
     # Install locust_mc
-    cd /opt/sw/
-    git clone "https://github.com/project8/locust_mc"
-    cd locust_mc
-    git submodule update --init --recursive
-    git clone https://github.com/project8/Kassiopeia.git
-    sed -i -e 's/option( locust_mc_BUILD_WITH_KASSIOPEIA "Option to build with Kassiopeia" FALSE )/option( locust_mc_BUILD_WITH_KASSIOPEIA "Option to build with Kassiopeia" TRUE )/g' CMakeLists.txt
-    mkdir build
-    cd build
-    cmake3 ..
-    make install
-    source bin/source/kasperenv.sh
+    #cd /opt/sw/
+    #git clone "https://github.com/project8/locust_mc"
+    #cd locust_mc
+    #git submodule update --init --recursive
+    #git clone https://github.com/project8/Kassiopeia.git
+    #sed -i -e 's/option( locust_mc_BUILD_WITH_KASSIOPEIA "Option to build with Kassiopeia" FALSE )/option( locust_mc_BUILD_WITH_KASSIOPEIA "Option to build with Kassiopeia" TRUE )/g' CMakeLists.txt
+    #mkdir build
+    #cd build
+    #cmake3 ..
+    #make install
+    #source bin/source/kasperenv.sh
 #    echo "source /opt/sw/locust_mc/build/bin/kasperenv.sh" >> ~/.bashrc
 
 
